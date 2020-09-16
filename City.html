@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_53b95b5b0cf94821be10c15937fee8da {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_53b95b5b0cf94821be10c15937fee8da" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_53b95b5b0cf94821be10c15937fee8da = L.map(
+        'map_53b95b5b0cf94821be10c15937fee8da', {
+        center: [20.5937, 78.9629],
+        zoom: 6,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_8d21bad2600e4d5b9b857a8ab9358d4b = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_53b95b5b0cf94821be10c15937fee8da);
+    
+        var marker_de8679dedeca41e5aa3282d8c0df844b = L.marker(
+            [12.9791198, 77.5912997],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_53b95b5b0cf94821be10c15937fee8da);
+        
+    
+
+                var icon_93f3f7d53dda4c8e868a717029ed4109 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_de8679dedeca41e5aa3282d8c0df844b.setIcon(icon_93f3f7d53dda4c8e868a717029ed4109);
+            
+    
+            var popup_461c90c15c8c42b68f9553f6fa6a30ee = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3ea7ecb0877847d5aac81a539ddad468 = $(`<div id="html_3ea7ecb0877847d5aac81a539ddad468" style="width: 100.0%; height: 100.0%;">bangalore</div>`)[0];
+                popup_461c90c15c8c42b68f9553f6fa6a30ee.setContent(html_3ea7ecb0877847d5aac81a539ddad468);
+            
+
+            marker_de8679dedeca41e5aa3282d8c0df844b.bindPopup(popup_461c90c15c8c42b68f9553f6fa6a30ee)
+            ;
+
+            
+        
+</script>
